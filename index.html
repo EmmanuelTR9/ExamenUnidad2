@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="bootstrap/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="bootstrap/js/jquery.min2.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min2.js"></script>
+    <!--FireBase-->
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-firestore.js"></script>
+    <title>Unidad 2 - AdminBD Inicio de Sesion FireBase</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+    
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+
+
+     <!--Incorporar app.js-->
+    <script src="app.js"></script>
+</head>
+<body>
+    <body background="img/fondo.jpg"></body>
+<div class="container" style="margin-top:80px">
+      <!-- fixed-top boloquea la barra al top para que no se desplase con el scroll -->
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+      <!-- Brand logo de la barra -->
+      <a class="navbar-brand" href="index.php">Examen Unidad 2</a>
+      
+      <!-- Toggler/collapsibe Button boton tipo menu-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <!-- Navbar links se agrega un div para activar la clase collapse -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+      <li class="nav-item">
+      <a class="nav-link">Formulario para registrarse e iniciar sesion</a>
+      </li>
+      </ul>
+      </div>
+      </nav>
+<div class="container p-3 my-3 border bg-dark">
+<div class="jumbotron text-center bg-dark">
+<div class="container" >
+  <h2 class="text-white">FORMULARIO PARA REGISTRARSE Y ACCEDER AL SISTEMA</h2>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col"  style="background-color:#aaa">
+        <h2>Formulario de Registro</h2>
+        <br>
+        <p><input class="form-control" type="email" id="email" placeholder="Introduzca su email"/></p>
+        <p><input class="form-control" type="password" id="password" placeholder="Introduzca su contraseña"/></p>
+        <button class="btn btn-primary" onclick="registrar()">Registrarse</button>
+    
+        <!---<hr/>--->
+
+      </div>
+      <div class="col"  style="background-color:#aaa">          
+        <h2>Formulario de Inicio de Sesion</h2>
+        <br>
+        <p><input class="form-control" type="email" id="emailI" placeholder="Introduzca su email"/></p>
+        <p><input class="form-control" type="password" id="passwordI" placeholder="Introduzca su contraseña"/></p>
+        <button class="btn btn-success" onclick="ingresar()" >Iniciar</button>
+        <br/>
+        <div id="mostrar">
+        <br/>
+
+      </div>
+    </div>
+</body>
+</html>
